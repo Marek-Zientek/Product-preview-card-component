@@ -1,3 +1,5 @@
+@use "colors" as colors;
+
 *, *::before, *::after {
     margin: 0;
     padding: 0;
@@ -9,8 +11,15 @@ html {
 }
 
 body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.8rem;
+    background-color: colors.$cream;
+    
 }
 
 p {
