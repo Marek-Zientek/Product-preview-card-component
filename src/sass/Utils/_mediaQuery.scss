@@ -1,0 +1,19 @@
+@media (min-width:1000px) {
+    .card {
+        width: 60vw;
+        height: 70vh;
+        display: grid;
+        
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        
+        &-image {
+            grid-column: 1/4;
+            grid-row: 1/8;
+            background-image: url("../img/image-product-desktop.jpg");
+        }
+        &-content {
+            grid-column: 5/8;
+        }
+    }
+}
